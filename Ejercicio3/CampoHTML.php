@@ -1,5 +1,10 @@
 <?php
 
+interface ConEstilo
+{
+  public function tipoLetra();
+}
+
 abstract class CampoHTML
 {
   private $id;
