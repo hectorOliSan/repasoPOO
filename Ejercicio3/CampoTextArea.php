@@ -1,6 +1,6 @@
 <?php
 
-class CampoTextArea extends CampoHTML
+class CampoTextArea extends CampoHTML implements ConEstilo
 {
   private $rows;
   private $cols;
@@ -14,7 +14,8 @@ class CampoTextArea extends CampoHTML
 
   public function generaCodigoHTML()
   {
-    echo "<textarea id='" . $this->getId() .
+    echo "<textarea style='" . $this->tipoLetra() . "'" .
+      " id='" . $this->getId() .
       "' name='" . $this->getName() .
       "' rows='" . $this->getRows() .
       "' cols='" . $this->getCols() .
@@ -23,6 +24,10 @@ class CampoTextArea extends CampoHTML
       "</textarea>";
   }
 
+  public function tipoLetra()
+  {
+    return "font-family:courier;";
+  }
 
   /**
    * Get the value of rows
