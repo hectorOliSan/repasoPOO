@@ -1,5 +1,28 @@
 # Actividades de repaso de POO
 
+## Actividad de repaso de POO (3)
+
+Implementa las siguientes clases que te permitan generar de forma sencilla el código HTML de varios campos de formularios:
+
+- Una clase base denominada campoHTML.
+
+  - Incluirá al menos dos atributos que serán comunes a todos los campos HTML que implementes en las clases derivadas.
+
+  - Tendrá definido un constructor que inicializará todos los atributos de la clase con los parámetros correspondientes..
+
+  - Incluirá un método abstracto denominado generaCodigoHTML que devolverá el código HTML del campo correspondiente.
+
+- Una clase derivada de la anterior por cada uno de los campos que vayas a implementar: campo de texto, campo oculto, desplegable, checkbox, textarea.
+
+- Dichas clases derivadas tendrán su propio constructor con todos los atributos pasados por parámetro. Si necesitas algún atributo adicional respecto a los de la clase base, inclúyelos.
+
+- Define una interfaz denominada ConEstilo que incluya el método “tipoLetra”. Dicho métodos permitirá, a las clases que implementen esa interfaz, modificar el estilo de visualización del campo modificando el atributo HTML “style” .
+
+Implementa un PHP que genere un formulario HTML usando las clases anteriores.
+
+---
+## Actividad de repaso de POO
+
 Implementa una clase denominada “CuentaCorriente”. Dicha clase tendrá las siguientes características:
 
 - Sus atributos serán todos privados: el número de la cuenta corriente, el nombre del tiutlar de la cuenta y el importe de que dispone.
@@ -21,6 +44,8 @@ Implementa una clase denominada “CuentaCorriente”. Dicha clase tendrá las s
 Implementa un PHP que valide la correcta definición de las clases anteriores.
 
 ---
+
+## Actividad de repaso de POO (2)
 
 Crea una clase base denominada "Electrodoméstico" con las siguientes características:
 
