@@ -12,12 +12,18 @@ class CampoTexto extends CampoHTML
 
   public function generaCodigoHTML()
   {
-    echo "<input id='" . $this->getId() .
+    echo "<input style='" . $this->tipoLetra() . "'" .
+      " id='" . $this->getId() .
       "' type='text" .
       "' name='" . $this->getName() .
       "' value='" . $this->getValue() .
       "' maxlength='" . $this->getMaxlength() .
       "' required>";
+  }
+
+  public function tipoLetra()
+  {
+    return "font-family:impact;";
   }
 
   /**
